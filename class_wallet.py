@@ -34,7 +34,13 @@ class Wallet:
             self.banknotes[value] += qty
         elif type == 'coin':
             self.coins[value] += qty
-
+            
+    def take_money(self, type, value, qty):
+        if type == 'banknote':
+            self.banknotes[value] -= qty
+        elif type == 'coin':
+            self.coins[value] -= qty
+        
     def money_details(self, type):
         if type == 'all' or type == 'banknotes':
             banknotes_list = Wallet._details_calc(self.banknotes)
