@@ -10,7 +10,7 @@ class Wallet:
         return my_list
 
     @staticmethod
-    def _sum_calc_single(my_dict):
+    def _sum_calc_value_single(my_dict):
         total = 0
         for key, value in my_dict.items():
             key_as_int = float(key)
@@ -19,28 +19,45 @@ class Wallet:
         return total
 
     @staticmethod
-    def _sum_calc_both(banknotes, coins):
-        total = Wallet._sum_calc_single(banknotes) + Wallet._sum_calc_single(coins)
+    def _sum_calc_value_both(banknotes, coins):
+        total = Wallet._sum_calc_value_single(banknotes) + Wallet._sum_calc_value_single(coins)
         return total
 
-    def __init__(self, color, max_qty):
+    @staticmethod
+    def _sum_calc_qty(my_dict):
+        total = 0
+        for key, value in my_dict.items():
+            total += my_dict[key]
+
+        return total
+
+    def __init__(self, color, max_qty_coins, max_qty_bankotes):
         self.color = color
-        self.max_qty = max_qty
+        self.max_qty_coins = max_qty_coins
+        self.max_qty_banknotes = max_qty_bankotes
         self.banknotes = {'5': 0, '10': 0, '20': 0, '50': 0, '100': 0}
         self.coins = {'2': 0, '1': 0, '0.50': 0, '0.20': 0, '0.10': 0, '0.05': 0, '0.02': 0, '0.01': 0}
 
     def add_money(self, type, value, qty):
         if type == 'banknote':
-            self.banknotes[value] += qty
+            if Wallet._sum_calc_qty(self.banknotes) + qty <= self.max_qty_banknotes:
+                self.banknotes[value] += qty
+                print('Banknotes added successfully!')
+            else:
+                print('You do not have enough space in your wallet!')
         elif type == 'coin':
-            self.coins[value] += qty
-            
+            if Wallet._sum_calc_qty(self.coins) + qty <= self.max_qty_coins:
+                self.coins[value] += qty
+                print('Banknotes added successfully!')
+            else:
+                print('You do not have enough space in your wallet!')
+
     def take_money(self, type, value, qty):
         if type == 'banknote':
             self.banknotes[value] -= qty
         elif type == 'coin':
             self.coins[value] -= qty
-        
+
     def money_details(self, type):
         if type == 'all' or type == 'banknotes':
             banknotes_list = Wallet._details_calc(self.banknotes)
@@ -50,7 +67,7 @@ class Wallet:
             print(coins_list)
 
     def __repr__(self):
-        total = Wallet._sum_calc_both(self.banknotes, self.coins)
+        total = Wallet._sum_calc_value_both(self.banknotes, self.coins)
         return f'This wallet is {self.color} and contains {total}lv.'
 
 
