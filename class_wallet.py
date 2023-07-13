@@ -48,15 +48,23 @@ class Wallet:
         elif type == 'coin':
             if Wallet._sum_calc_qty(self.coins) + qty <= self.max_qty_coins:
                 self.coins[value] += qty
-                print('Banknotes added successfully!')
+                print('Coins added successfully!')
             else:
                 print('You do not have enough space in your wallet!')
 
     def take_money(self, type, value, qty):
         if type == 'banknote':
-            self.banknotes[value] -= qty
+            if self.banknotes[value] - qty >= 0:
+                self.banknotes[value] -= qty
+                print('Banknotes removed successfully!')
+            else:
+                print('You do not have enough such banknotes in your wallet!')
         elif type == 'coin':
-            self.coins[value] -= qty
+            if self.coins[value] - qty >= 0:
+                self.coins[value] -= qty
+                print('Banknotes removed successfully!')
+            else:
+                print('You do not have enough such coins in your wallet!')
 
     def money_details(self, type):
         if type == 'all' or type == 'banknotes':
@@ -71,11 +79,14 @@ class Wallet:
         return f'This wallet is {self.color} and contains {total}lv.'
 
 
-my_wallet = Wallet('black', 400)
+my_wallet = Wallet('black', 50, 50)
 my_wallet.add_money('coin', '0.50', 4)
 my_wallet.add_money('coin', '0.02', 7)
 my_wallet.add_money('banknote', '50', 1)
 my_wallet.add_money('banknote', '20', 3)
 my_wallet.add_money('banknote', '5', 3)
+my_wallet.take_money('coin', '0.50', 10)
+my_wallet.take_money('banknote', '20', 1)
+my_wallet.add_money('banknote', '100', 80)
 my_wallet.money_details('all')
 print(my_wallet.__repr__())
