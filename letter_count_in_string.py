@@ -12,4 +12,5 @@ def letter_counter(ch, text):
 
 letter_search = input()
 input_string = input()
-print(letter_counter(letter_search, input_string))
+result = letter_counter(letter_search, input_string)
+print(f"The letter '{letter_search}' appears {result} times in the submitted text.")
