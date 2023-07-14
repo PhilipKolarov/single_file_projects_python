@@ -10,5 +10,5 @@ for el in input_as_array:
     else:
         pass
 
-print(sum_of_ints)
-print(int_count)
+print(f"The sum of the integers in your input is {sum_of_ints}.")
+print(f"The amount of integers in your input is {int_count}.")
