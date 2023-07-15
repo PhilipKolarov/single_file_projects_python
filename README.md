@@ -10,3 +10,4 @@ class_wallet - an example of utilizing classes with a wallet, including static m
 sum_ints_in_list - a simple file that collects integers in a given list and prints their sum;
 letter_count_in_string - a simple file that detects occurances of a given letter in a string and adds them up;
 longest_word_checker - a function, which finds and returns the longest word in a text, along with its length
+divisible_or_not - a function, which returns True or False, depending on wether division is possible between two numbers;
