@@ -20,3 +20,11 @@ my_number = tracker(my_number, 'multiply', 6)
 my_number = tracker(my_number, 'divide', 12)
 my_number = tracker(my_number, 'power', 2)
 print(my_number)
+
+i = 1
+i = tracker(i, 'divide', 2)
+i = tracker(i, 'add', 4)
+i = tracker(i, 'divide', 1.5)
+i = tracker(i, 'power', 4)
+i = tracker(i, 'subtract', 80)
+print(i)
