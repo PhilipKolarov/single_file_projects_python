@@ -38,7 +38,7 @@ class Wallet:
         self.banknotes = {'5': 0, '10': 0, '20': 0, '50': 0, '100': 0}
         self.coins = {'2': 0, '1': 0, '0.50': 0, '0.20': 0, '0.10': 0, '0.05': 0, '0.02': 0, '0.01': 0}
 
-    def add_money(self, type, value, qty):
+        def add_money(self, type, value, qty):
         if type == 'banknote':
             if Wallet._sum_calc_qty(self.banknotes) + qty <= self.max_qty_banknotes:
                 self.banknotes[value] += qty
@@ -62,7 +62,7 @@ class Wallet:
         elif type == 'coin':
             if self.coins[value] - qty >= 0:
                 self.coins[value] -= qty
-                print('Banknotes removed successfully!')
+                print('Coins removed successfully!')
             else:
                 print('You do not have enough such coins in your wallet!')
 
