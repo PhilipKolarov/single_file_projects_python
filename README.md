@@ -12,3 +12,4 @@ letter_count_in_string - a simple file that detects occurances of a given letter
 longest_word_checker - a function, which finds and returns the longest word in a text, along with its length
 divisible_or_not - a function, which returns True or False, depending on wether division is possible between two numbers;
 result_tracker - a function, which updates a number, depending on the given operation;
+grade_judge - a simple function that determines your grade, based on your score;
