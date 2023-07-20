@@ -1,0 +1,5 @@
+This is a directory, demonstrating inheritance, using juice as an example. For now the hierarchy stands as follows:
+
+Juice - Parent Class
+Apple Juice - Subclass
+Orange Juice - Subclass
