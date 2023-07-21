@@ -25,3 +25,5 @@ result_tracker - a function, which updates a number, depending on the given oper
 grade_judge - a simple function that determines your grade, based on your score;
 
 feet_and_inches_to_metric_calculator - a convertor that transforms feet/inches into meters;
+
+Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
