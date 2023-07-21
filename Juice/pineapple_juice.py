@@ -6,7 +6,4 @@ class PineappleJuice(Juice):
         super().__init__(quantity, pulp)
         self.title = 'Pineapple'
         self.taste = 'pineapple'
-
-    def __str__(self):
-        message = f'This {self.taste}" juice is {self.quantity}.'
-
+        self.natural_color = 'yellow'
