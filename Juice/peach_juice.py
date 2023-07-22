@@ -8,3 +8,6 @@ class PeachJuice(Juice):
         self.taste = 'peach'
         self.natural_color = 'orange'
 
+    def __str__(self):
+        message = f'This {self.taste}" juice is {self.quantity}ml.'
+        return message
