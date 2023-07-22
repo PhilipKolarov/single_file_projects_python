@@ -7,3 +7,7 @@ class ApricotJuice(Juice):
         self.title = 'Apricot'
         self.taste = 'apricot'
         self.natural_color = 'dark yellow'
+
+    def __str__(self):
+        message = f'This {self.taste}" juice is {self.quantity}ml.'
+        return message
