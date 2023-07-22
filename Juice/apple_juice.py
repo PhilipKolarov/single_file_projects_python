@@ -9,5 +9,5 @@ class AppleJuice(Juice):
         self.natural_color = color
 
     def __str__(self):
-        message = f'This {self.taste}" juice is {self.quantity}ml.'
+        message = f'This {self.taste} juice is {self.quantity}ml.'
         return message
