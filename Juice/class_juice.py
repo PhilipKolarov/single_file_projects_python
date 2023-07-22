@@ -1,8 +1,14 @@
-class Juice:
+from abc import ABC, abstractmethod
+
+
+class Juice(ABC):
     def __init__(self, quantity, pulp):
         self.quantity = quantity
         self.pulp = pulp
-        self.taste = ''
+
+    @property
+    def has_pulp(self):
+        return self.pulp
 
     def drink(self, drink_quantity):
         self.quantity -= drink_quantity
@@ -12,5 +18,6 @@ class Juice:
         self.quantity += added_quantity
         return self.quantity
 
+    @abstractmethod
     def __str__(self):
-        message = f'This {self.taste}" juice is {self.quantity}.'
+        pass
