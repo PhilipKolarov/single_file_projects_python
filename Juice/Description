@@ -3,6 +3,7 @@ This is a directory, demonstrating inheritance, using juice as an example. For n
 Juice - Parent Class (Abstract)
 Apple Juice - Subclass
 Apricot Juice - Subclass
+Cherry Juice - Subclass
 Lemon Juice - Subclass
 Orange Juice - Subclass
 Peach Juice - Subclass
