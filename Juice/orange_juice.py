@@ -7,7 +7,15 @@ class OrangeJuice(Juice):
         self.title = 'Orange'
         self.taste = 'orange'
         self.natural_color = 'orange'
+        if self.pulp:
+            self.density = 1.25
+        else:
+            self.density = 1.04
 
     def __str__(self):
-        message = f'This {self.taste}" juice is {self.quantity}ml.'
+        message = f'This {self.taste} juice is {self.quantity}ml.'
         return message
+
+    @property
+    def show_density(self):
+        return self.density
