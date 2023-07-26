@@ -58,7 +58,7 @@ def time_calculator(num, current_metric, wanted_metric):
     string_to_return = ''
 
     for el in result:
-        if isinstance(el, str):
+        if isinstance(el, str) and el != result[-1]:
             string_to_return += f'{el} '
         else:
             string_to_return += f'{el}'
@@ -66,3 +66,8 @@ def time_calculator(num, current_metric, wanted_metric):
 
 
 print(time_calculator(150, 'seconds', 'minutes'))
+print(time_calculator(6080, 'seconds', 'hours'))
+print(time_calculator(3, 'minutes', 'seconds'))
+print(time_calculator(68, 'minutes', 'hours'))
+print(time_calculator(3, 'hours', 'seconds'))
+print(time_calculator(1, 'hours', 'minutes'))
