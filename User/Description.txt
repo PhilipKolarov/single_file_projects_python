@@ -1,0 +1,5 @@
+This set of classes rotates around the parent class "User".
+
+the hierarchy is visualized somewhat below:
+
+User
