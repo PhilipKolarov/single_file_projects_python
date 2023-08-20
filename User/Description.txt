@@ -4,5 +4,6 @@ the hierarchy is visualized somewhat below:
 
 User (Abstract Class)
 
+Superuser
 Admin
 Unregisterd User
