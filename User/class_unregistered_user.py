@@ -1,7 +1,7 @@
 from class_user import User
 
 
-class Superuser(User):
+class UnregisteredUser(User):
     def __init__(self, username, password, first_name, last_name, gender):
         super().__init__(username, password, first_name, last_name, gender)
 
