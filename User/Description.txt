@@ -1,10 +1,12 @@
 This set of classes rotates around the parent class "User".
 
-the hierarchy is visualized somewhat below:
+The hierarchy is visualized below:
 
 User (Abstract Class)
 
-Superuser
-Admin
-Registered User
-Unregisterd User
+1. Superuser
+2. Admin
+3. Registered User
+4. Unregisterd User
+
+Other methods are due to be implemented still, as well as test runs!
