@@ -22,3 +22,11 @@ class Admin(User):
     def delete(self, title, command):
         self.commits[title] = command
         self.history.append(f"Delete - {title}")
+
+    def display_history(self):
+        result = ''
+        for el in self.history:
+            result += f"{el} \n"
+
+        result += ' --- '
+        return result
