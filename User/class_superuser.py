@@ -30,3 +30,12 @@ class Superuser(User):
 
         result += ' --- '
         return result
+
+    @staticmethod
+    def display_history_other_user(other_user):
+        result = ''
+        for el in other_user.history:
+            result += f"{el} \n"
+
+        result += ' --- '
+        return result
