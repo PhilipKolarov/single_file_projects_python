@@ -6,4 +6,5 @@ User (Abstract Class)
 
 Superuser
 Admin
+Registered User
 Unregisterd User
