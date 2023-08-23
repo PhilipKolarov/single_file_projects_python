@@ -21,7 +21,13 @@ class User(ABC):
             result += f'{el}\n'
         result += ' ---------- '
         return result
-    
+
     @abstractmethod
     def __repr__(self):
         pass
+
+    def open_page(self, page):
+        self.history.append(f'Page - {page}')
+
+    def delete_history(self):
+        self.history = []
