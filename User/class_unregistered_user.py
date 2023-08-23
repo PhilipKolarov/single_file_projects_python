@@ -7,3 +7,6 @@ class UnregisteredUser(User):
 
     def __repr__(self):
         return f"My name is {self.first_name} {self.last_name} and I am an unregistered user."
+
+    def delete_history(self):
+        pass
