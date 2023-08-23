@@ -26,7 +26,9 @@ grade_judge - a simple function that determines your grade, based on your score;
 
 feet_and_inches_to_metric_calculator - a convertor that transforms feet/inches into meters;
 
-time_calculator - a convertor that transforms seconds, minutes and hours into each other.
+time_calculator - a convertor that transforms seconds, minutes and hours into each other;
+
+calculate_tickets_fro_goup - a simple function that calculates the total cost of tickets for a group of people;
 
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
