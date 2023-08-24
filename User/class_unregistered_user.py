@@ -10,3 +10,7 @@ class UnregisteredUser(User):
 
     def delete_history(self):
         pass
+
+
+unregistered = UnregisteredUser("phil99", "abc123", "Philip", "Kolarov", "male")
+print(unregistered.__repr__())
