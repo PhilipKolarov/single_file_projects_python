@@ -1,7 +1,7 @@
-from class_user import User
+from class_registered_user import RegisteredUser
 
 
-class Admin(User):
+class Admin(RegisteredUser):
     def __init__(self, username, password, first_name, last_name, gender):
         super().__init__(username, password, first_name, last_name, gender)
         self.commits = {}
