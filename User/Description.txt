@@ -6,6 +6,6 @@ User (Abstract Class)
           |
           V
 1. Unregistered User
-2. Registered User (Abstract Class) --> a) Superuser; b) Admin
+2. Registered User (Abstract Class) --> a) Superuser; b) Admin; c) Standard Registered User
 
-Other methods are due to be implemented still, as well as new class "Standard Registered User" and test runs!
+Other methods are due to be implemented still, as well as test runs!
