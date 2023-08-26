@@ -28,7 +28,9 @@ feet_and_inches_to_metric_calculator - a convertor that transforms feet/inches i
 
 time_calculator - a convertor that transforms seconds, minutes and hours into each other;
 
-calculate_tickets_fro_goup - a simple function that calculates the total cost of tickets for a group of people;
+calculate_tickets_for_goup - a simple function that calculates the total cost of tickets for a group of people;
+
+class_card - a class of playing cards with different properties and methods.
 
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
