@@ -21,9 +21,20 @@ class Card:
 
     def compare_with(self, new_card):
         new_card_suite = new_card.card_suite()
+        new_card_number = new_card.card_number()
         result = ''
 
-        if self.suite == new_card_suite:
+        if self.card_suite == new_card_suite:
             result += f'Both cards are {new_card_suite}.\n'
         else:
             result += 'Cards are different suites.\n'
+
+        if self.card_number > new_card_number:
+            result += f'{self.__str__()} is greater than {new_card.__str__}.'
+        elif self.card_number < new_card_number:
+            result += f'{self.__str__()} is less than {new_card.__str__}.'
+        elif self.card_number == new_card_number:
+            result += 'Both cards are equal.'
+
+    def __str__(self):
+        return f'{self.title} of {self.suite}'
