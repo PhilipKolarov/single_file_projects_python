@@ -32,8 +32,8 @@ class Card:
         return self.number
 
     def compare_with(self, new_card):
-        new_card_suite = new_card.card_suite()
-        new_card_number = new_card.card_number()
+        new_card_suite = new_card.card_suite
+        new_card_number = new_card.card_number
         result = ''
 
         if self.card_suite == new_card_suite:
@@ -42,11 +42,13 @@ class Card:
             result += 'Cards are different suites.\n'
 
         if self.card_number > new_card_number:
-            result += f'{self.__str__()} is greater than {new_card.__str__}.'
+            result += f'{self.__str__()} is greater than {new_card_number} of {new_card_suite}.'
         elif self.card_number < new_card_number:
-            result += f'{self.__str__()} is less than {new_card.__str__}.'
+            result += f'{self.__str__()} is less than {new_card_number} of {new_card_suite}.'
         elif self.card_number == new_card_number:
             result += 'Both cards are equal.'
+
+        return result
 
     def __str__(self):
         return f'{self.title} of {self.suite}'
@@ -58,3 +60,5 @@ print(card_a.card_suite)
 print(card_a.card_title)
 print(card_a.__str__())
 
+card_b = Card('Jack', 'Hearts')
+print(card_b.compare_with(card_a))
