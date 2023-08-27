@@ -32,6 +32,8 @@ calculate_tickets_for_goup - a simple function that calculates the total cost of
 
 class_card - a class of playing cards with different properties and methods.
 
+length_checker - a simple function that checks if a given text is within a given range of words.
+
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
