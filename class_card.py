@@ -50,3 +50,11 @@ class Card:
 
     def __str__(self):
         return f'{self.title} of {self.suite}'
+
+
+card_a = Card(10, 'Spades')
+print(card_a.card_number)
+print(card_a.card_suite)
+print(card_a.card_title)
+print(card_a.__str__())
+
