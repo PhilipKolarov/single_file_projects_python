@@ -1,8 +1,16 @@
 class Card:
-    def __init__(self, number, suite):
-        self.number = number
+    NUMBER_DICT = {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'Jack': 11,
+                   'Queen': 12, 'King': 13, 'Ace': 14}
+
+    def __init__(self, title, suite):
+        self.number = self.determine_number(title)
+        self.title = title
         self.suite = suite
         self.color = self.determine_color(suite)
+
+    def determine_number(self, t):
+        t_str = str(t)
+        return self.NUMBER_DICT[t_str]
 
     @staticmethod
     def determine_color(suite):
@@ -12,12 +20,16 @@ class Card:
             return 'red'
 
     @property
-    def card_number(self):
-        return self.number
+    def card_title(self):
+        return self.title
 
     @property
     def card_suite(self):
         return self.suite
+
+    @property
+    def card_number(self):
+        return self.number
 
     def compare_with(self, new_card):
         new_card_suite = new_card.card_suite()
