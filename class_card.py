@@ -42,9 +42,9 @@ class Card:
             result += 'Cards are different suites.\n'
 
         if self.card_number > new_card_number:
-            result += f'{self.__str__()} is greater than {new_card_number} of {new_card_suite}.'
+            result += f'{self.__str__()} is greater than {new_card.__str__()}.'
         elif self.card_number < new_card_number:
-            result += f'{self.__str__()} is less than {new_card_number} of {new_card_suite}.'
+            result += f'{self.__str__()} is less than {new_card.__str__()}.'
         elif self.card_number == new_card_number:
             result += 'Both cards are equal.'
 
