@@ -38,6 +38,8 @@ divisible_by_two_numbers - a function, which determines if a number is divisible
 
 divisible_by_x_numbers - similar to "divisible_by_two_numbers", but with an infinite amount of potential dividers inputed.
 
+class_pen - a class that takes into account a pen's ink capacity and whether ot not it has a lid on.
+
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
