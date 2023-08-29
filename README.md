@@ -40,6 +40,8 @@ divisible_by_x_numbers - similar to "divisible_by_two_numbers", but with an infi
 
 class_pen - a class that takes into account a pen's ink capacity and whether ot not it has a lid on.
 
+return_key_values - a function that returns a structured string of a keys and values, using **kwargs.
+
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
