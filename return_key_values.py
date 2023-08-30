@@ -9,4 +9,6 @@ def return_key_values(name, **kwargs):
     return output_string
 
 
-print(return_key_values('My Dictionary', A='apple', B='bannana', C='cranberry'))
+print(return_key_values('My Dictionary', A='apple', B='banana', C='cranberry'))
+print(return_key_values('Temple of Doom', director='Steven Spielberg', producer='George Lucas', music='John Williams'))
+print(return_key_values('Football Results', manchester_united=9, liverpool=5, chelsea=3, arsenal=2))
