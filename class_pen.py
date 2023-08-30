@@ -22,3 +22,13 @@ class Pen:
         else:
             self.lid = False
             return 'Lid taken off.'
+
+    def write_word(self, word_count):
+        if word_count * self.INK_PER_WORD <= self.ink_remaining:
+            self.ink_remaining -= word_count * self.INK_PER_WORD
+
+        else:
+            print(f'Not enough ink for {word_count} words!')
+
+    def __repr__(self):
+        return f'Color - {self.color}; Ink remaining - {self.ink_remaining}'
