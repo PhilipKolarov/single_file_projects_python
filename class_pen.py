@@ -32,3 +32,10 @@ class Pen:
 
     def __repr__(self):
         return f'Color - {self.color}; Ink remaining - {self.ink_remaining}'
+
+pen = Pen('blue', True, 10000)
+print(pen.__repr__())
+print(pen.take_off_lid())
+print(pen.write_word(145))
+print(pen.add_lid())
+print(pen.__repr__())
