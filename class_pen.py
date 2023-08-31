@@ -24,6 +24,8 @@ class Pen:
             return 'Lid taken off.'
 
     def write_word(self, word_count):
+        if self.lid:
+            return 'Take off lid in order to write!'
         if word_count * self.INK_PER_WORD <= self.ink_remaining:
             self.ink_remaining -= word_count * self.INK_PER_WORD
             return self.ink_remaining
