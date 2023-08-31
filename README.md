@@ -30,17 +30,19 @@ time_calculator - a convertor that transforms seconds, minutes and hours into ea
 
 calculate_tickets_for_goup - a simple function that calculates the total cost of tickets for a group of people;
 
-class_card - a class of playing cards with different properties and methods.
+class_card - a class of playing cards with different properties and methods;
 
-length_checker - a simple function that checks if a given text is within a given range of words.
+length_checker - a simple function that checks if a given text is within a given range of words;
 
-divisible_by_two_numbers - a function, which determines if a number is divisible by one or more of two given integers.
+divisible_by_two_numbers - a function, which determines if a number is divisible by one or more of two given integers;
 
-divisible_by_x_numbers - similar to "divisible_by_two_numbers", but with an infinite amount of potential dividers inputed.
+divisible_by_x_numbers - similar to "divisible_by_two_numbers", but with an infinite amount of potential dividers inputed;
 
-class_pen - a class that takes into account a pen's ink capacity and whether ot not it has a lid on.
+class_pen - a class that takes into account a pen's ink capacity and whether ot not it has a lid on;
 
-return_key_values - a function that returns a structured string of a keys and values, using **kwargs.
+return_key_values - a function that returns a structured string of a keys and values, using **kwargs;
+
+list_divisible_numbers - a function, which returns all numbers that may divide a given number;
 
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
