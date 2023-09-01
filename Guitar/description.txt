@@ -1,0 +1,3 @@
+Here is a visual representation of th hierarchy at the present. (Changes still to come)
+
+Guitar (Abstract class)
