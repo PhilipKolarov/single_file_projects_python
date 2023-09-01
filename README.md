@@ -47,3 +47,5 @@ list_divisible_numbers - a function, which returns all numbers that may divide a
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
+
+Guitar (Directory) - A demonstration of multiple inheritance with different types of guitars. Work in progress!
