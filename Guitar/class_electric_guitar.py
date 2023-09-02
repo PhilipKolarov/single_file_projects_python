@@ -2,8 +2,10 @@ from class_guitar import Guitar
 
 
 class ElectricGuitar(Guitar):
-    def __init__(self, frets, battery, strings_qty):
-        super().__init__(frets, battery, strings_qty)
+    STRING_BORDERS = [6, 9]
+
+    def __init__(self, model, frets, battery, strings_qty):
+        super().__init__(model, frets, battery, strings_qty)
 
     def determine_standard_tuning(self):
         if self.strings_qty == 6:
