@@ -3,8 +3,10 @@ from abc import ABC, abstractmethod
 
 class Guitar(ABC):
     STRING_BORDERS = [4, 9]
+    STANDARD_NOTE_ORDER = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 
-    def __init__(self, frets, battery, strings_qty):
+    def __init__(self, model, frets, battery, strings_qty):
+        self.model = model
         self.frets = frets
         self.battery = battery
         self.strings_qty = self._is_valid_strings_qty(strings_qty)
@@ -21,15 +23,22 @@ class Guitar(ABC):
     def determine_standard_tuning(self):
         pass
 
+    # INCOMPLETE!
     def determine_strings_notes(self):
         strings_notes_dict = {}
 
         for string in self.tuning:
-            strings_notes_dict[string] = []
-
-    def play_frets(self, **kwargs):
-        for string, fret in kwargs.items():
-            pass
+            note_order = self.STANDARD_NOTE_ORDER
+            beginning_index = note_order.index(string)
+            for index, item in list(enumerate(note_order)):
+                while index < beginning_index:
+                    note_order.remove(item)
+                    note_order.append(item)
+            
+            strings_notes_dict[string] = note_order
+        
+        return strings_notes_dict
+    
 
     @abstractmethod
     def __repr__(self):
