@@ -23,7 +23,6 @@ class Guitar(ABC):
     def determine_standard_tuning(self):
         pass
 
-    # INCOMPLETE!
     def determine_strings_notes(self):
         strings_notes_dict = {}
 
@@ -34,11 +33,21 @@ class Guitar(ABC):
                 while index < beginning_index:
                     note_order.remove(item)
                     note_order.append(item)
-            
+
+            repetitions = self.frets // len(note_order) - 1
+            additional_notes = self.frets % len(note_order)
+            note_order_copy = note_order
+
+            if repetitions == 1:
+                for note in note_order_copy:
+                    note_order.append(note)
+            if additional_notes:
+                for index in range(0, additional_notes):
+                    note_order.append(note_order_copy[index])
+
             strings_notes_dict[string] = note_order
-        
+
         return strings_notes_dict
-    
 
     @abstractmethod
     def __repr__(self):
