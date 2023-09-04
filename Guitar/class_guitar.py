@@ -23,16 +23,18 @@ class Guitar(ABC):
     def determine_standard_tuning(self):
         pass
 
-    def determine_strings_notes(self):
+        def determine_strings_notes(self):
         strings_notes_dict = {}
 
         for string in self.tuning:
             note_order = self.STANDARD_NOTE_ORDER
             beginning_index = note_order.index(string)
             for index, item in list(enumerate(note_order)):
-                while index < beginning_index:
+                if index < beginning_index:
                     note_order.remove(item)
                     note_order.append(item)
+                else:
+                    break
 
             repetitions = self.frets // len(note_order) - 1
             additional_notes = self.frets % len(note_order)
