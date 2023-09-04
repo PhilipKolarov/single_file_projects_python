@@ -13,3 +13,7 @@ class ClassicalGuitar(Guitar):
 
     def __repr__(self):
         return f'This classical guitar had {self.frets} frets.'
+
+
+classical_guitar = ClassicalGuitar('Kremona', 22, None, 6)
+print(classical_guitar.__repr__())
