@@ -18,6 +18,7 @@ class Guitar(ABC):
         string_max = self.STRING_BORDERS[1]
         if strings_qty < string_min or strings_qty > string_max:
             raise AttributeError(f'Invalid number of strings! Please try again.')
+        return strings_qty
 
     @abstractmethod
     def determine_standard_tuning(self):
