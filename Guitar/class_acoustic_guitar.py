@@ -17,3 +17,7 @@ class AcousticGuitar(Guitar):
 
     def __repr__(self):
         return f'This acoustic guitar has {self.strings_qty} strings and {self.frets} frets.'
+
+
+acoustic_guitar = AcousticGuitar('Kremona', 21, None, 6)
+print(acoustic_guitar.__repr__())
