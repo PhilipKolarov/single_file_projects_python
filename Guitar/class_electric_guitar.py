@@ -19,3 +19,8 @@ class ElectricGuitar(Guitar):
 
     def __repr__(self):
         return f'This electric guitar has {self.strings_qty} strings and {self.frets} frets.'
+
+
+electric_guitar = ElectricGuitar('LTD', 24, None, 7)
+print(electric_guitar.__repr__())
+print(electric_guitar.display_tuning())
