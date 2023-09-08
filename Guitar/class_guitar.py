@@ -52,6 +52,15 @@ class Guitar(ABC):
 
         return strings_notes_dict
 
+    def display_tuning(self):
+        result = ''
+        for s in self.tuning:
+            result += f'{s}-'
+            
+        result = result[:-1]
+        return result
+
     @abstractmethod
     def __repr__(self):
         pass
+
