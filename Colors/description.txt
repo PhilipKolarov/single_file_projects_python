@@ -1,0 +1,1 @@
+This text doucment displays information about the colors in each subclass (WIP)
