@@ -1,7 +1,4 @@
-from abc import ABC, abstractmethod
-
-
-class Color(ABC):
+class Color:
     MAX_VALUE = 255
     MIN_VALUE = 0
 
@@ -17,4 +14,4 @@ class Color(ABC):
         raise ValueError(f'The value of all colors must be at least {self.MIN_VALUE} and at most {self.MAX_VALUE}!')
 
     def __repr__(self):
-        pass
+        return f'Red: {self.red}; Green: {self.green}; Blue: {self.blue}.'
