@@ -44,6 +44,8 @@ return_key_values - a function that returns a structured string of a keys and va
 
 list_divisible_numbers - a function, which returns all numbers that may divide a given number;
 
+class_speaker - a simple class of speaker with a changeable volume;
+
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
