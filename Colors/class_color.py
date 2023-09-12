@@ -13,6 +13,15 @@ class Color:
 
         raise ValueError(f'The value of all colors must be at least {self.MIN_VALUE} and at most {self.MAX_VALUE}!')
 
+    def modify_red(self, value):
+        self.red += value
+
+    def modify_green(self, value):
+        self.green += value
+
+    def modify_blue(self, value):
+        self.blue += value
+
     def __repr__(self):
         return f'Red: {self.red}; Green: {self.green}; Blue: {self.blue}.'
 
