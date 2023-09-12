@@ -15,3 +15,9 @@ class Color:
 
     def __repr__(self):
         return f'Red: {self.red}; Green: {self.green}; Blue: {self.blue}.'
+
+
+blue = Color(0, 0, 255)
+red = Color(255, 0, 0)
+green = Color(0, 255, 0)
+yellow = Color(255, 255, 0)
