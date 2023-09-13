@@ -26,3 +26,10 @@ class Speaker:
 
     def __repr__(self):
         return f'This {self.model} speaker is currently at {self.current_volume}db.'
+
+
+my_speaker = Speaker('Mc Farlow', 30, 90)
+my_speaker.increase_volume(50)
+print(my_speaker.increase_volume(50))
+my_speaker.decrease_volume(13)
+print(my_speaker.__repr__())
