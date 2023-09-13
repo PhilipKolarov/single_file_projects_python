@@ -3,11 +3,11 @@ class Color:
     MIN_VALUE = 0
 
     def __init__(self, red, green, blue):
-        self.red = self.color_value_range_checker(red)
-        self.green = self.color_value_range_checker(green)
-        self.blue = self.color_value_range_checker(blue)
+        self.red = self._color_value_range_checker(red)
+        self.green = self._color_value_range_checker(green)
+        self.blue = self._color_value_range_checker(blue)
 
-    def color_value_range_checker(self, value):
+    def _color_value_range_checker(self, value):
         if self.MAX_VALUE >= value >= self.MIN_VALUE:
             return value
 
@@ -30,3 +30,4 @@ blue = Color(0, 0, 255)
 red = Color(255, 0, 0)
 green = Color(0, 255, 0)
 yellow = Color(255, 255, 0)
+
