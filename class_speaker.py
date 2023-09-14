@@ -24,6 +24,16 @@ class Speaker:
             return f'The volume cannot cannot exceed {self.max_volume}!'
         return None
 
+    def connect(self):
+        if self.connected:
+            return 'This speaker is already plugged in!'
+        self.connected = False
+
+    def disconnect(self):
+        if not self.connected:
+            return 'This speaker is already disconnected!'
+        self.connected = True
+
     def __repr__(self):
         return f'This {self.model} speaker is currently at {self.current_volume}db.'
 
