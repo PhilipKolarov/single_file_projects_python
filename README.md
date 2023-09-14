@@ -46,6 +46,8 @@ list_divisible_numbers - a function, which returns all numbers that may divide a
 
 class_speaker - a simple class of speaker with a changeable volume;
 
+class_traffic_lights - a simple class with changeable trafficl lights, using time;
+
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
