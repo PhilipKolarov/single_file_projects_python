@@ -2,6 +2,8 @@ def calculate_change(price, given_money):
     if price > given_money:
         diff = price - given_money
         return f'You require {diff:.2f} more to pay the necessary price!'
+    elif price == given_money:
+        return 'Exact price paid!'
     else:
         change = given_money - price
         return f'{change:.2f}'
@@ -10,3 +12,4 @@ def calculate_change(price, given_money):
 print(calculate_change(56.45, 60))
 print(calculate_change(12.99, 100))
 print(calculate_change(124.99, 90))
+print(calculate_change(48.34, 48.34))
