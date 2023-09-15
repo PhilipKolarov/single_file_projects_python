@@ -27,3 +27,8 @@ class TrafficLights:
             return self.switch_time
         elif current_state == 'GREEN - Go!':
             return self.green_time
+
+
+lights = TrafficLights(10, 2.5, 5)
+lights.activate()
+lights.deactivate()
