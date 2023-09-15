@@ -48,7 +48,9 @@ class_speaker - a class of speaker with a changeable volume;
 
 class_traffic_lights - a simple class with changeable trafficl lights, using time;
 
-change_calculato - a simple function, which calculates how much change is required or if more money needs to be paid;
+change_calculator - a simple function, which calculates how much change is required or if more money needs to be paid;
+
+time_tracker - a function that prints the current time by a calculation of its own;
 
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
