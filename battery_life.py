@@ -8,3 +8,7 @@ class Battery:
         used_power = self.rate * seconds
         self.power -= used_power
         return f'{used_power} power used;\n{self.power} remaining'
+
+
+my_battery = Battery('Duracell', 0.009)
+print(my_battery.use_battery(300))
