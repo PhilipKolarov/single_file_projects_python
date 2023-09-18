@@ -54,6 +54,8 @@ time_tracker - a function that prints the current time by a calculation of its o
 
 class_battery - class that can determine how much energy is used by a battery and how much is remaining;
 
+class_oven - class that fulfils the standard functions of an oven;
+
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
