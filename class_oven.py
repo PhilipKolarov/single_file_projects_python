@@ -6,7 +6,12 @@ class Oven:
         self.plugged_in = True
 
     def switch_power(self):
-        self.plugged_in = False
+        if self.plugged_in:
+            self.plugged_in = False
+            return 'Oven unplugged'
+        else:
+            self.plugged_in = True
+            return 'Oven plugged in'
 
     def cook(self, mode, temperature, duration, *food_items):
         if mode not in self.modes:
@@ -20,3 +25,11 @@ class Oven:
 
         return f'Returning cooked {", ".join(food_items)}, cooked at {temperature} for {duration} minutes.'
 
+    def __repr__(self):
+        return f'This {self.model} oven has a maximum temperature of {self.max_temperature} degrees and the following modes: {", ".join(self.modes)}'
+
+
+my_oven = Oven('Gorenje', 240, ['grill', 'light', 'grill & ventilator', 'microwave'])
+print(my_oven.cook('grill', 180, 45, 'pork chops', 'onions', 'carrots'))
+print(my_oven.switch_power())
+print(my_oven.__repr__())
