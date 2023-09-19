@@ -11,8 +11,12 @@ class Oven:
     def cook(self, mode, temperature, duration, *food_items):
         if mode not in self.modes:
             return 'No such mode available!'
+        if not self.plugged_in:
+            return 'Switch oven on first!'
         if not food_items:
             return 'Food item(s) required!'
+        if temperature > self.max_temperature:
+            return f'Maximum temperature of {self.max_temperature} degrees exceeded!'
 
-        return f'Returning cooked {join.food_items(", ")}, cooked at {temperature} for {duration} minutes.'
+        return f'Returning cooked {", ".join(food_items)}, cooked at {temperature} for {duration} minutes.'
 
