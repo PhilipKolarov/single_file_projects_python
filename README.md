@@ -58,6 +58,8 @@ class_oven - class that fulfils the standard functions of an oven;
 
 turn_the_page - a simple function that turns to a new page, if within the given range;
 
+class_compass - a class, which performs the functions of a compass;
+
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
