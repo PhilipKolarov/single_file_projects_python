@@ -60,6 +60,8 @@ turn_the_page - a simple function that turns to a new page, if within the given 
 
 class_compass - a class, which performs the functions of a compass;
 
+data_neutralizer - a function that returns a dictionary without certain specified keys or values;
+
 Juice (Directory) - A demonstration of inheritance with classes, using juice as an example
 
 User (Directory) - A personal version of a user class for a website, utilizing inheritance
